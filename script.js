@@ -108,6 +108,6 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
     if (isMobile) {
         window.location.href = `mailto:sujalnayak210@gmail.com?subject=${subject}&body=${body}`;
     } else {
-        window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=sujalnayak210@gmail.com&su=${subject}&body=${body}`;
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=sujalnayak210@gmail.com&su=${subject}&body=${body}`, '_blank');
     }
 });
