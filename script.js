@@ -104,10 +104,15 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
 
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const url = isMobile
+        ? `mailto:sujalnayak210@gmail.com?subject=${subject}&body=${body}`
+        : `https://mail.google.com/mail/?view=cm&fs=1&to=sujalnayak210@gmail.com&su=${subject}&body=${body}`;
 
-    if (isMobile) {
-        window.location.href = `mailto:sujalnayak210@gmail.com?subject=${subject}&body=${body}`;
-    } else {
-        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=sujalnayak210@gmail.com&su=${subject}&body=${body}`, '_blank');
-    }
+    const a = document.createElement('a');
+    a.href = url;
+    if (!isMobile) a.target = '_blank';
+    a.rel = 'noopener';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 });
