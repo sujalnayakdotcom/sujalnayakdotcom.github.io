@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujal Nayak — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-text">
+            <span>S</span><span>U</span><span>J</span><span>A</span><span>L</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-brand">SN<span class="brand-dot">.</span></a>
+        <div class="nav-menu" id="nav-menu">
+            <a href="#work" class="nav-link" data-index="01">Projects</a>
+            <a href="#about" class="nav-link" data-index="02">About</a>
+            <a href="#skills" class="nav-link" data-index="03">Skills</a>
+            <a href="#contact" class="nav-link" data-index="04">Contact</a>
+        </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-left">
+            <div class="hero-label">Portfolio &mdash; 2026</div>
+            <h1 class="hero-title">
+                <span class="title-line"><span class="reveal-text">Sujal</span></span>
+                <span class="title-line"><span class="reveal-text">Nayak</span></span>
+            </h1>
+            <p class="hero-sub reveal-text">Developer &amp; Designer crafting digital experiences that matter.</p>
+            <div class="hero-cta">
+                <a href="#work" class="cta-btn">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-container">
+                <img src="assets/profile1.png" alt="Sujal Nayak" class="hero-img">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="hero-scroll-line"></div>
+        </div>
+        <div class="hero-marquee">
+            <div class="marquee-track">
+                <span>DEVELOPER</span><span>&bull;</span><span>DESIGNER</span><span>&bull;</span>
+                <span>CREATIVE</span><span>&bull;</span><span>PROBLEM SOLVER</span><span>&bull;</span>
+                <span>DEVELOPER</span><span>&bull;</span><span>DESIGNER</span><span>&bull;</span>
+                <span>CREATIVE</span><span>&bull;</span><span>PROBLEM SOLVER</span><span>&bull;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="work" id="work">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-heading">Projects</h2>
+        </div>
+        <div class="projects-list">
+            <a href="#" class="project-row">
+                <div class="project-num">01</div>
+                <div class="project-name">
+                    <h3>Project One</h3>
+                    <p>Web Application</p>
+                </div>
+                <div class="project-tech">React / Node.js / MongoDB</div>
+                <div class="project-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </div>
+                <div class="project-hover-img" style="background-image: linear-gradient(135deg, #222, #111);"></div>
+            </a>
+            <a href="#" class="project-row">
+                <div class="project-num">02</div>
+                <div class="project-name">
+                    <h3>Project Two</h3>
+                    <p>Design Tool</p>
+                </div>
+                <div class="project-tech">JavaScript / Canvas API</div>
+                <div class="project-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </div>
+                <div class="project-hover-img" style="background-image: linear-gradient(135deg, #2a2a2a, #0a0a0a);"></div>
+            </a>
+            <a href="#" class="project-row">
+                <div class="project-num">03</div>
+                <div class="project-name">
+                    <h3>Project Three</h3>
+                    <p>Data Dashboard</p>
+                </div>
+                <div class="project-tech">Python / D3.js / SQL</div>
+                <div class="project-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </div>
+                <div class="project-hover-img" style="background-image: linear-gradient(135deg, #333, #111);"></div>
+            </a>
+            <a href="#" class="project-row">
+                <div class="project-num">04</div>
+                <div class="project-name">
+                    <h3>Project Four</h3>
+                    <p>Mobile App</p>
+                </div>
+                <div class="project-tech">React Native / Firebase</div>
+                <div class="project-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </div>
+                <div class="project-hover-img" style="background-image: linear-gradient(135deg, #1a1a1a, #000);"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-heading">About</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-col about-col-left">
+                <div class="about-img-wrap">
+                    <img src="assets/profile.png" alt="Sujal Nayak" class="about-img">
+                </div>
+            </div>
+            <div class="about-col about-col-right">
+                <p class="about-big-text">I build things for the web with a focus on clean code and great user experiences.</p>
+                <p class="about-body">I'm a developer and designer based in India. I love turning complex problems into simple, beautiful solutions. When I'm not coding, I'm exploring new technologies and contributing to open source.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="10">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="5">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="2">0</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills (Bento Grid) -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-heading">Skills</h2>
+        </div>
+        <div class="bento-grid">
+            <div class="bento-card bento-lg">
+                <span class="bento-label">Frontend</span>
+                <h3>Building interfaces that feel alive</h3>
+                <div class="bento-tags">
+                    <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Responsive Design</span>
+                </div>
+            </div>
+            <div class="bento-card bento-sm">
+                <span class="bento-label">Backend</span>
+                <div class="bento-tags">
+                    <span>Node.js</span><span>Python</span><span>REST APIs</span><span>Databases</span>
+                </div>
+            </div>
+            <div class="bento-card bento-sm">
+                <span class="bento-label">Tools</span>
+                <div class="bento-tags">
+                    <span>Git</span><span>VS Code</span><span>Figma</span><span>Terminal</span>
+                </div>
+            </div>
+            <div class="bento-card bento-wide">
+                <span class="bento-label">Philosophy</span>
+                <h3>"Good design is as little design as possible."</h3>
+                <p>&mdash; Dieter Rams</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-heading">Get In Touch</h2>
+        </div>
+        <div class="contact-layout">
+            <div class="contact-left">
+                <p class="contact-big">Have a project in mind? Let's talk.</p>
+                <div class="contact-links">
+                    <a href="#" class="contact-social">GitHub</a>
+                    <a href="#" class="contact-social">LinkedIn</a>
+                    <a href="#" class="contact-social">Twitter</a>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="off" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Sujal Nayak</p>
+            <p>Designed & Built with care</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
