@@ -96,9 +96,18 @@ function animateCount(el, target) {
 // ===== Contact Form =====
 document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
-    const btn = e.target.querySelector('.submit-btn span');
-    const original = btn.textContent;
-    btn.textContent = 'Sent!';
-    e.target.reset();
-    setTimeout(() => { btn.textContent = original; }, 3000);
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const subject = encodeURIComponent(`Message from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        window.location.href = `mailto:sujalnayak210@gmail.com?subject=${subject}&body=${body}`;
+    } else {
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=sujalnayak210@gmail.com&su=${subject}&body=${body}`, '_blank');
+    }
 });
