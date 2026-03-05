@@ -965,6 +965,59 @@ button, input, textarea { cursor: none; }
     .bento-lg { grid-column: auto; grid-row: auto; min-height: auto; }
     .bento-wide { grid-column: auto; }
 
+    .career {
+        padding: 80px 24px;
+    }
+
+    .career-list {
+        margin-left: 0;
+    }
+
+    .career-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 8px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        border-left: 1px solid var(--border);
+        position: relative;
+    }
+
+    .career-date {
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        padding-right: 0;
+        padding-top: 0;
+        order: 2;
+    }
+
+    .career-date-start::after {
+        content: ' –';
+    }
+
+    .career-line {
+        display: none;
+    }
+
+    .career-item::before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 4px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: var(--fg);
+        border: 2px solid var(--bg);
+        outline: 1px solid var(--fg);
+    }
+
+    .career-content {
+        padding-left: 0;
+        order: 1;
+    }
+
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 40px;
