@@ -520,6 +520,129 @@ button, input, textarea { cursor: none; }
     margin-top: 4px;
 }
 
+/* ===== Career ===== */
+.career {
+    padding: 120px 80px;
+    border-top: 1px solid var(--border);
+}
+
+.career-list {
+    max-width: 860px;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.career-item {
+    display: grid;
+    grid-template-columns: 120px 40px 1fr;
+    gap: 0 0;
+    padding-bottom: 48px;
+}
+
+.career-item:last-child {
+    padding-bottom: 0;
+}
+
+/* Date column */
+.career-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-top: 2px;
+    gap: 2px;
+}
+
+.career-date-start {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--fg);
+    font-weight: 600;
+}
+
+.career-date-end {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+/* Line + dot column */
+.career-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.career-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--fg);
+    border: 2px solid var(--bg);
+    outline: 1px solid var(--fg);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.career-track {
+    width: 1px;
+    flex: 1;
+    background: var(--border);
+    margin-top: 8px;
+}
+
+.career-item:last-child .career-track {
+    display: none;
+}
+
+/* Content column */
+.career-content {
+    padding-left: 24px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.career-role {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 2px;
+}
+
+.career-company {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.career-company-name {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.career-type {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.career-duration {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+}
+
+.career-location {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+}
+
 /* ===== Skills Bento ===== */
 .skills {
     padding: 120px 0;
