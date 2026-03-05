@@ -730,6 +730,34 @@ button, input, textarea { cursor: none; }
 .submit-btn svg { transition: transform 0.3s; }
 .submit-btn:hover svg { transform: translateX(4px); }
 
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    background: #25D366;
+    color: #fff;
+    border: 1px solid #25D366;
+    border-radius: 100px;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: transparent;
+    color: #25D366;
+}
+
 /* ===== Footer ===== */
 .footer {
     border-top: 1px solid var(--border);
