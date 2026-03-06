@@ -1102,7 +1102,7 @@ button, input, textarea { cursor: none; }
     }
 
     .cert-slide {
-        min-width: 88%;
+        min-width: 75%;
     }
 
     .cert-img {
@@ -1113,17 +1113,6 @@ button, input, textarea { cursor: none; }
 
     .cert-track-outer {
         overflow: hidden;
-    }
-
-    .cert-arrow {
-        width: 28px;
-        height: 28px;
-        flex-shrink: 0;
-    }
-
-    .cert-arrow svg {
-        width: 14px;
-        height: 14px;
     }
 
 
