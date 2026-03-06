@@ -97,6 +97,7 @@ function animateCount(el, target) {
 (function () {
     const track = document.getElementById('cert-slider');
     const slides = track.querySelectorAll('.cert-slide');
+    const dots = document.querySelectorAll('.cert-dot');
     let current = 0;
 
     function slideWidth() {
@@ -106,6 +107,7 @@ function animateCount(el, target) {
     function goTo(index) {
         current = Math.max(0, Math.min(index, slides.length - 1));
         track.style.transform = `translateX(-${current * slideWidth()}px)`;
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
     }
 
     document.getElementById('cert-next').addEventListener('click', () => goTo(current + 1));

@@ -959,6 +959,25 @@ button, input, textarea { cursor: none; }
     border-color: var(--fg);
 }
 
+.cert-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.cert-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: background 0.3s;
+}
+
+.cert-dot.active {
+    background: var(--fg);
+}
+
 /* ===== Footer ===== */
 .footer {
     border-top: 1px solid var(--border);
