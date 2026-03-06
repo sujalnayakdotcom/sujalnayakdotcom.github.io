@@ -114,6 +114,16 @@ function animateCount(el, target) {
     slides.forEach(slide => {
         slide.addEventListener('click', () => window.open(slide.dataset.href, '_blank'));
     });
+
+    // Touch swipe
+    let touchStartX = 0;
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    }, { passive: true });
 })();
 
 // ===== Contact Form =====
