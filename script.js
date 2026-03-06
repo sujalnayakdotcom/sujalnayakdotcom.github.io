@@ -93,6 +93,29 @@ function animateCount(el, target) {
     tick();
 }
 
+// ===== Certificate Slider =====
+(function () {
+    const track = document.getElementById('cert-slider');
+    const slides = track.querySelectorAll('.cert-slide');
+    let current = 0;
+
+    function slideWidth() {
+        return slides[0].offsetWidth + 24;
+    }
+
+    function goTo(index) {
+        current = Math.max(0, Math.min(index, slides.length - 1));
+        track.style.transform = `translateX(-${current * slideWidth()}px)`;
+    }
+
+    document.getElementById('cert-next').addEventListener('click', () => goTo(current + 1));
+    document.getElementById('cert-prev').addEventListener('click', () => goTo(current - 1));
+
+    slides.forEach(slide => {
+        slide.addEventListener('click', () => window.open(slide.dataset.href, '_blank'));
+    });
+})();
+
 // ===== Contact Form =====
 document.getElementById('send-btn').addEventListener('click', () => {
     const name = document.getElementById('name').value.trim();

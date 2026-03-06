@@ -880,6 +880,84 @@ button, input, textarea { cursor: none; }
     color: #25D366;
 }
 
+/* ===== Certificates (inside Skills) ===== */
+.cert-section {
+    padding: 60px 80px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 60px;
+}
+
+.cert-heading {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 32px;
+}
+
+.cert-slider-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cert-track-outer {
+    flex: 1;
+    overflow: hidden;
+}
+
+.cert-track {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cert-slide {
+    min-width: 42%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cert-img {
+    width: 600px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.cert-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+.cert-arrow {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: none;
+    color: var(--fg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.cert-arrow:hover {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+}
+
 /* ===== Footer ===== */
 .footer {
     border-top: 1px solid var(--border);
@@ -1016,6 +1094,33 @@ button, input, textarea { cursor: none; }
     .career-content {
         padding-left: 0;
         order: 1;
+    }
+
+    .cert-section {
+        padding: 40px 24px 0;
+    }
+
+    .cert-slide {
+        min-width: 75%;
+    }
+
+    .cert-track-outer {
+        overflow: hidden;
+    }
+
+    .cert-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cert-arrow {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .cert-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-layout {
